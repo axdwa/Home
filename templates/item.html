@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ item.name }}</title>
+</head>
+<body>
+    <h1>{{ item.name }}</h1>
+    <p>{% if item.quantity == 0 %}Товар отсутствует{% else %}Количество: {{ item.quantity }}{% endif %}</p>
+    <a href="{% url 'item_list' %}">Вернуться к списку товаров</a>
+</body>
+</html>
+
